@@ -3,9 +3,23 @@
   "version": "0.0.1",
   "main": "index.js",
   "license": "MIT",
+  "bin": {
+    "nsc": "./index.js"
+  },
+  "author": {
+    "name": "hypermix",
+    "email": "hypermix87@gmail.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/hypermix/next-story-cli.git"
+  },
   "dependencies": {
     "commander": "^7.1.0",
     "lodash": "^4.17.20",
     "shelljs": "^0.8.4"
+  },
+  "publishConfig": {
+    "registry":"https://npm.pkg.github.com"
   }
 }
