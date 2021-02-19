@@ -10,14 +10,17 @@ const actions = {
             const currentPath = process.cwd();
             const fileName = _.chain(name).camelCase().upperFirst().value();
 
-            const targetDirPath = `${currentPath}/pages`;
-            const targetFilePath = `${targetDirPath}/${fileName}.tsx`;
+            const targetDirPath = `${currentPath}/pages/${fileName}`;
+            const targetFilePath = `${targetDirPath}/index.tsx`;
 
             if (fs.existsSync(targetFilePath)) {
                 return;
             }
 
-            fs.mkdirSync(targetDirPath)
+            if (!fs.existsSync(targetDirPath)) {
+                fs.mkdirSync(targetDirPath);
+            }
+            
             fs.writeFileSync(targetFilePath, templates.page(fileName));
         }
     }
