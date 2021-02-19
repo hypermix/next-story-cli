@@ -1,5 +1,5 @@
 {
-  "name": "@hypermix/next-story-cli",
+  "name": "next-story-cli",
   "version": "0.0.1",
   "description": "",
   "scripts": {
@@ -15,14 +15,11 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/hypermix/next-story-cli.git"
+    "url": "https://github.com/hypermix/next-story-cli.git"
   },
   "dependencies": {
     "commander": "^7.1.0",
     "lodash": "^4.17.20",
     "shelljs": "^0.8.4"
-  },
-  "publishConfig": {
-    "registry":"https://npm.pkg.github.com"
   }
 }
