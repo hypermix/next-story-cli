@@ -1,4 +1,5 @@
-const commander = require('commander')
+#! /usr/bin/env node
+const commander = require('commander');
 const fs = require('fs');
 const _ = require('lodash');
 const templates = require('./templates');
